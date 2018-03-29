@@ -65,8 +65,9 @@ var transform = (startingArray,resultingArray) => {
   }
   resultingArray=arr;
   for(const value of resultingArray) {
-    console.log(value);
-  } 
+    //console.log(value);
+  }
+  console.log("resultingArray==Question1",resultingArray); 
 }
 
 transform(startingArray,resultingArray);
@@ -74,10 +75,11 @@ transform(startingArray,resultingArray);
 
 
 const requests = [
-   {requestId: 'poiax',  startedAt: 1489744808, ttl: 8},
-   {requestId: 'kdfhd',  startedAt: 1489744803, ttl: 3},
-   {requestId: 'uqwyet', startedAt: 1489744806, ttl: 12}, 
-   {requestId: 'qewaz',  startedAt: 1489744810, ttl: 1}
+  {requestId: 'poiax',  startedAt: 1489744808, ttl: 8},
+{requestId: 'kdfhd',  startedAt: 1489744803, ttl: 3},
+{requestId: 'uqwyet', startedAt: 1489744806, ttl: 12}, 
+{requestId: 'qewaz',  startedAt: 1489744810, ttl: 1}
+
 ]
 
 var cumulativeTtl = 0;
@@ -90,7 +92,7 @@ requests.forEach(function(element){
 });
 cumulativeTtl = (max - min);
 
-console.log("cumulativeTtl===",cumulativeTtl);
+console.log("cumulativeTtl===Question2",cumulativeTtl);
 
 var polygons = [
 [3,4,8,5,7]
@@ -123,5 +125,5 @@ var result = [];
         others.push(polygons[i]);
     }
     result = _.union(triangles,squares,rectangles,others);
-    console.log("pol",result)
+    console.log("pol===Quesrion3",result)
 }
